@@ -20,8 +20,26 @@
   --icon-circle-bg: linear-gradient(
     0deg,
     rgb(65, 67, 69, 1) 0%,
-    rgba(107, 110, 114, 1) 100% --shadow-color: rbga(0, 0, 0, 0.25) ;
+    rgba(107, 110, 114, 1) 100%
   );
+  --shadow-color: rbga(0, 0, 0, 0.25);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fb-blue: #0a86f0;
+    --fb-black: #ffffff;
+    --fb-red: #ee2340;
+    --fb-green: #6fcf97;
+    --fb-yellow: #f6b024;
+    --fb-bgcolor: #121213;
+    --fb-white: #ffffff;
+    --fb-whitebg: #1f1f1f;
+    --dark-color-text: #ffffff;
+    --light-color-text: #d4d4dc;
+    --button-link: #0a86f0;
+    --stories-bg: #1f1f1f00;
+    --icon-circle-bg: #6fcf97;
+  }
 }
 body {
   background: var(--fb-bgcolor);
@@ -204,6 +222,7 @@ header {
 .content-area--feed {
   padding: 90px 15px 20px;
   display: flex;
+  height: 2500px;
 }
 .sidenav {
   width: 25%;
@@ -574,21 +593,21 @@ header {
   position: relative;
   cursor: pointer;
 }
-.floatingmsg__bubble img{
+.floatingmsg__bubble img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-.floatingmsg__bubble:hover .fa-edit{
+.floatingmsg__bubble:hover .fa-edit {
   color: var(--fb-blue);
 }
-.floatingmsg__notification{
+.floatingmsg__notification {
   background: var(--fb-red);
   color: white;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
